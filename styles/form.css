@@ -1,0 +1,40 @@
+@charset "UTF- 8";
+
+body {
+    background-color: #fff;
+}
+
+/* Form */
+.form-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-box input {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.form-box input[type='submit'] {
+    height: 30px;
+    background-color: #ff4403;
+    color: #fff;
+}
+
+.form-box input[type='submit']:hover {
+    cursor: pointer;
+    background-color: #f57f62;
+}

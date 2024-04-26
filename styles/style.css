@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+/* Header */
+header {
+    background-color: #ff4403;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.brand-logo {
+    padding: 5px;
+    background-color: #1a1a1a1f;
+    border-radius: 50%;
+}
+
+.brand-logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 9vh;
+}
+
+.search-bar input {
+    background-image: url(../images/header/lupa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #fff;
+    color: #1a1a1a;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.navigation-list img {
+    height: 40px;
+}
+
+.navigation-list img:hover {
+    cursor: pointer;
+}
+
+.navigation-list li {
+    list-style-type: none;
+    display: inline;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+.navigation-list li:hover {
+    cursor: pointer;
+} 
+
+.navigation-list a {
+    color: #fff;
+}
+
+.navigation-list span.material-symbols-outlined {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fafafa
+}
+
+/* Navigation */
+.page-list {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.233);
+}
+
+.page-list ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page-list li {
+    display: inline;
+    font-weight: bold;
+}
+
+.page-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.page-list a:hover {
+    color: #ff4403;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.233);;
+}
+
+.information-list li {
+    list-style-type: none;
+    color: #646464;
+}
+
+.information-list li:hover {
+    color: #000;
+}
+
+.information-list li, h1 {
+    margin-bottom: 20px;
+}
+
+.information-list h1 {
+    font-size: 1em;
+}
+
+.information-list a {
+    text-decoration: none;
+}

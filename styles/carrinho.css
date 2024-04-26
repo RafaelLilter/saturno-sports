@@ -1,0 +1,56 @@
+body{
+    background-color:white;
+   
+}
+
+.car-container{
+    font: arial;
+    font-size: 15pt;
+    background-color: white;
+    height: 500px;
+    width: 1200;
+}
+.car-box{   
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+    height: 150px;
+    width: 800px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 1px 3px rgba(1.244, 1.244, 1.244, 1.244);
+    flex-wrap: wrap;
+}
+
+.image {
+    margin-top: 15px;
+    height: 15%;
+    display: flex;
+
+}
+
+.description{
+    text-align: center;
+
+}
+
+.name {
+    font-size: 1.1em;
+    margin: 30px 0;
+}
+
+.price {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 22pt;
+}
+.colors {
+    display: inline-block;
+    color: #555;
+    font-weight: bold;
+    border: 1px solid #555;
+    border-radius: 3px;
+    margin-top: 10px;
+}
