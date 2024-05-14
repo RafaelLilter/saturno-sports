@@ -60,14 +60,19 @@ body{
     display: inline-block;
     font-size: 13pt;
     align-items: right;
-    color: #222;
+    color: #444;
     font-weight: bold;
     border: 1px solid #666;
     border-radius: 3px;
     margin-top: 10px;
-    width: 60px;
-    height: 20px;
-    
+    width: 30px;
+    height: 25px;
+}
+
+.operation {
+    margin-top: px;
+    height: 25px;
+    width: 25px;
 }
 
 .colors{

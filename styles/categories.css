@@ -18,9 +18,9 @@ main {
 .product-box {
     padding: 16px;
     border: 1px solid #999;
+    max-height: 400px;
+    max-width: 300px;
     border-radius: 5px;
-    height: 400px;
-    width: 300px;
     cursor: pointer;
     transition: 0.3s;
 }
