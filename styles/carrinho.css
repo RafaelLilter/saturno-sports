@@ -1,8 +1,9 @@
-body{
-    background-color:white;
-   
+body {
+    background-color: white;
+
 }
-.car-box{   
+
+.car-box {
     margin-top: 10px;
     margin-left: 15px;
     padding: 5px;
@@ -10,15 +11,14 @@ body{
     border-radius: 5px;
     height: 160px;
     width: 800px;
-    cursor: pointer;
-    transition: 0.5s;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.194);
+    transition: 0.1s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.142);
     flex-wrap: wrap;
-    margin-bottom: 500px;
     font-size: 14pt;
 }
+
 .car-box:hover {
-    scale: 1.01;
+    scale: 1.004;
 }
 
 .image {
@@ -29,8 +29,8 @@ body{
 
 }
 
-.description{
-    margin-left:160px ;
+.description {
+    margin-left: 160px;
     margin-top: -12px;
     height: 100px;
     left: 10px;
@@ -42,17 +42,57 @@ body{
     font-size: 18pt;
 }
 
-.description2{
-    text-align: right;
-    margin-right: 50px;
-    margin-top: -50px;
-}
-.price {
-    font-weight: bold;
-    font-size: 16pt;;
+.lixeira{
+    position:absolute;
+    top: 10px;
+    right: 10px;
 }
 
-.cor{
+.lix{
+    height: 22px;
+    width: 22px;
+}
+
+.lix:hover{
+    border-radius: 2px;
+    background-color: rgb(199, 54, 54);
+}
+
+.description2 {
+    text-align: right;
+    margin-right: 50px;
+    margin-top: -90px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.button {
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    background-color: #555;
+    color: white;
+    margin-bottom: 13px;
+    font-size: 11pt;
+}
+
+.button:hover {
+    background-color: #888;
+    cursor: pointer;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16pt;
+    ;
+}
+
+.cor {
     margin-left: 150px;
 }
 
@@ -67,21 +107,4 @@ body{
     margin-top: 10px;
     width: 30px;
     height: 25px;
-}
-
-.operation {
-    margin-top: px;
-    height: 25px;
-    width: 25px;
-}
-
-.colors{
-    font-size: 13pt;
-    display: inline-block;
-    align-items: left;
-    color: #666;
-    font-weight: bold;
-    border: 1px solid #666;
-    border-radius: 3px;
-    margin-top: 10px; 
 }
