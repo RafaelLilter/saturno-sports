@@ -30,11 +30,11 @@ body {
 
 .form-box input[type='submit'] {
     height: 30px;
-    background-color: #ff4403;
+    background-color: #450194;
     color: #fff;
 }
 
 .form-box input[type='submit']:hover {
     cursor: pointer;
-    background-color: #f57f62;
+    background-color: #ac6ef3;
 }

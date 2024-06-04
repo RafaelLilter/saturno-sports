@@ -9,33 +9,33 @@
 }
 
 body {
-    background-color: #1b1b1b;
+    background-color: #efe6e6;
 }
 
 /* Header */
 header {
-    background-color: #ff4403;
+    background-color: #460194;
     display: flex;
     align-items: center; 
     justify-content: space-around;
 }
 
 .brand-logo {
-    padding: 5px;
-    background-color: #1a1a1a1f;
+    padding: 10px;
+    background-color: #450194;
     border-radius: 50%;
 }
 
 .brand-logo img {
     height: 80px;
-    width: 80px;
+    width: 180px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 75%;
     height: 9vh;
 }
 
@@ -110,7 +110,7 @@ header {
 }
 
 .page-list a:hover {
-    color: #ff4403;
+    color: #ac6ef3;
     cursor: pointer;
 }
 
