@@ -54,116 +54,7 @@
     <!-- Main -->
     <main>
         <!-- Produtos -->
-        <div class="product-container">
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-            <div class="product-box">
-                <div class="image"><img src="images/acessories/football-ball.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Bola de Futebol de Campo Brasileirão</p>
-                    <p class="price">R$ 199,99</p>
-                    <p class="discount">Ou 10x de R$20,99</p>
-                    <p class="colors">Cor única</p>
-                </div>
-            </div>
-        </div>
+        <div class="product-container"></div>
     </main>
 
     <hr>
@@ -227,6 +118,51 @@
             </ul>
         </div>
     </footer>
+
+    <script src="js/buy-car.js"></script>
+    <script>
+
+        let product1 = ['Bola de Futebol de Campo Brasileirão', '199,99', 'images/acessories/football-ball.jpg'];
+        let productContainer = document.querySelector('.product-container');
+        let divLists = ['div1', 'div2', 'div3', 'div4', 'div5'];
+
+        for (let i = 0; i< divLists.length; i++) {
+        let productBox = document.createElement('div');
+        productContainer.appendChild(productBox);
+        productBox.classList.add(divLists[i]);
+        productBox.classList.add('product-box');
+
+        let productBox2 = document.querySelector(`.${divLists[i]}`);
+        let imageContainer = document.createElement('div');
+        productBox2.appendChild(imageContainer);
+        imageContainer.classList.add(divLists[i]);
+        imageContainer.classList.add('image');
+
+        let imageContainer2 = document.querySelector(`.${divLists[i]}`);
+        let image = document.createElement('img');
+        imageContainer2.appendChild(image);
+        image.src = product1[2];
+
+        let descriptionContainer = document.createElement('p');
+        productBox2.appendChild(descriptionContainer);
+        descriptionContainer.classList.add('description-container');
+
+        let nameProduct = document.createElement('p');
+        descriptionContainer.appendChild(nameProduct);
+        nameProduct.classList.add('name');
+        nameProduct.innerHTML = product1[0];
+
+        let price = document.createElement('div');
+        descriptionContainer.appendChild(price);
+        price.classList.add('price');
+        price.innerHTML = product1[1];
+
+        let button = document.createElement('button');
+        descriptionContainer.appendChild(button);
+        button.classList.add('buy-button');
+        button.innerHTML = 'Comprar';
+    }
+    </script>
 </body>
 
 </html>

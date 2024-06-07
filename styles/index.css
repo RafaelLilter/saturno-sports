@@ -1,17 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carrossel{
+    filter: drop-shadow(2px 2px 4px #00000000);
+    overflow: hidden;
+    align-items: center;
+}
+
+.banner{
+    height: 400px;
+    width: 100%;
+}
+
 .banner-container {
+    gap: 30px;
     display: flex;
+    transition: transform 0.9s ease-in-out;
+    transform: translateX(0);
     text-align: center;
     justify-content: center;
-    padding: 10px;
-    margin: 20px 0;
+    padding: 15px;
+    margin: 20px 0;  
 }
 
 .banner-container img {
-    width: 100%;
-    cursor: pointer;
+    object-fit: cover;
 }
 
 .desk-container {
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;

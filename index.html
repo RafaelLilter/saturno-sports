@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Estilos -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/index.css">
@@ -19,24 +21,24 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
         <div class="brand-logo"><a href="#"><img src="images/header/saturno.png" alt="Logo Saturno"></a></div>
         <div class="search-bar">
-            <input type="text" name="procura" id="iprocura"
-            placeholder="O que você procura?">
+            <input type="text" name="procura" id="iprocura" placeholder="O que você procura?">
         </div>
         <div class="navigation-list">
             <ul>
                 <li><a href="login.html">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span></a></li>
+                        <span class="material-symbols-outlined">
+                            person
+                        </span></a></li>
                 <li><a href="carrinho.html"><span class="material-symbols-outlined">
-                    shopping_cart
-                    </span></a></li>
+                            shopping_cart
+                        </span></a></li>
             </ul>
         </div>
     </header>
@@ -61,8 +63,12 @@
 
     <!-- Main -->
     <main>
-        <div class="banner-container">
-            <img src="images/index/banner1.png" alt="">
+        <div class="carrossel">
+            <div class="banner-container" id="img">
+                <img src="images/index/banner1.png" alt="" class="banner">
+                <img src="images/index/banner2.png" alt="" class="banner">
+                <img src="images/index/banner3.png" alt="" class="banner">
+            </div>
         </div>
 
         <div class="desk-container">
@@ -132,5 +138,7 @@
             </ul>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
