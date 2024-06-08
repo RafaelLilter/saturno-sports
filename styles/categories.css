@@ -12,21 +12,22 @@ main {
 
 .product-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: repeat(auto-fill, 280px);
     gap: 10px;
     margin-bottom: 20px;
+    padding-left: 30px;
 }
 
 .product-box {
     padding: 16px;
     border: 1px solid #999;
     border-radius: 8px;
-    cursor: pointer;
     transition: 0.3s;
 }
 
 .product-box img {
-    width: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 .image {
@@ -42,7 +43,7 @@ main {
 
 .name {
     font-size: 1.3em;
-    margin: 30px 0;
+    margin: 30px 0 20px 0;
 }
 
 .price {
@@ -66,6 +67,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .buy-button:hover {

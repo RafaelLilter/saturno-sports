@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/categories.css">
     <title>Saturno Sports</title>
-    <style>
-        .image {
-            height: 35%;
-        }
-    </style>
 <body>
 
     <!-- Header -->
@@ -59,15 +54,6 @@
     <main>
         <!-- Produtos -->
         <div class="product-container">
-            <div class="product-box">
-                <div class="image"><img src="images/football-boots/football-boot.jpg" alt=""></div>
-                <div class="description">
-                    <p class="name">Chuteira Society Nike Mercurial Vortex</p>
-                    <p class="price">R$ 599,00</p>
-                    
-                    <p class="buy-button">Comprar</p>
-                </div>
-            </div>
             
         </div>
     </main>
@@ -82,13 +68,13 @@
                     <li>Escola: EEEP Maria Môsa</li>
                 </a>
                 <a href="#">
-                    <li>Matéria: HTML/CSS</li>
+                    <li>Matéria: HTML/CSS e JS</li>
                 </a>
-                <a href="https://www.instagram.com/israel_douglas/" target="_blank">
-                    <li>Prof: Israel Douglas</li>
+                <a href="https://www.instagram.com/jacksonfreitas2024/" target="_blank">
+                    <li>Prof: Jackson Freitas</li>
                 </a>
                 <a href="https://www.instagram.com/infor_mms23/" target="_blank">
-                    <li>Turma: 1 Ano C</li>
+                    <li>Turma: 2 Ano C</li>
                 </a>
             </ul>
         </div>
@@ -133,7 +119,48 @@
         </div>
     </footer>
 
-    <script src="js/buy-car.js"></script>
+    <script>
+
+        let product1 = ['Chuteira Nike Mercurial Azul', '699,99', 'images/football-boots/football-boot.jpg'];
+        let productContainer = document.querySelector('.product-container');
+        let divLists = ['div1', 'div2', 'div3', 'div4', 'div5', 'div6', 'div7', 'div8', 'div9', 'div10', 'div11', 'div12', 'div13', 'div14'];
+
+        for (let i = 0; i< divLists.length; i++) {
+        let productBox = document.createElement('div');
+        productContainer.appendChild(productBox);
+        productBox.classList.add(divLists[i]);
+        productBox.classList.add('product-box');
+
+        let productBox2 = document.querySelector(`.${divLists[i]}`);
+        let imageContainer = document.createElement('div');
+        productBox.appendChild(imageContainer);
+        imageContainer.classList.add(divLists[i]);
+        imageContainer.classList.add('image');
+
+        let image = document.createElement('img');
+        imageContainer.appendChild(image);
+        image.src = product1[2];
+
+        let descriptionContainer = document.createElement('p');
+        productBox2.appendChild(descriptionContainer);
+        descriptionContainer.classList.add('description-container');
+
+        let nameProduct = document.createElement('p');
+        descriptionContainer.appendChild(nameProduct);
+        nameProduct.classList.add('name');
+        nameProduct.innerHTML = product1[0];
+
+        let price = document.createElement('div');
+        descriptionContainer.appendChild(price);
+        price.classList.add('price');
+        price.innerHTML = product1[1];
+
+        let button = document.createElement('button');
+        descriptionContainer.appendChild(button);
+        button.classList.add('buy-button');
+        button.innerHTML = 'Comprar';
+    }
+    </script>
 </body>
 
 </html>
